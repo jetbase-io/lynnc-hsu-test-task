@@ -9,8 +9,8 @@ export function SectionSearch() {
     return (
         <div className=''>
             {/* search */}
-            <div className='flex gap-x-8'>
-                <div className='flex flex-1 border '>
+            <div className='flex w-full gap-x-8'>
+                <div className='flex flex-1 w-full border '>
                     <Input type="text" className='z-10 w-full px-3 py-2 text-base text-gray-600 placeholder-gray-300 rounded-md rounded-tr-none rounded-br-none ' placeholder='Enter Keywords, SPU, SKU' />
                     <SelectCategory className="text-gray-400 bg-gray-100 rounded-tl-none rounded-bl-none " />
                 </div>
