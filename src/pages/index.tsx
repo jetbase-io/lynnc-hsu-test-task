@@ -27,8 +27,6 @@ export const getServerSideProps: GetServerSideProps<{
     `${baseURL}/recommended`,
     `${baseURL}/collections`,
   ];
-  console.log(urls);
-  // Get all the responses in parallel using Promise.all
   const [
     categoriesRes,
     bestSellersRes,
@@ -62,7 +60,6 @@ export const getServerSideProps: GetServerSideProps<{
 export default function Home({
   repo,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  console.log(repo);
   return (
     <div className="flex flex-col w-full mx-auto gap-y-6 max-w-7xl ">
       <SectionSearch />

@@ -6,7 +6,6 @@ import * as React from "react"
 
 
 export function SectionCategories({ categories }: { categories: Category[] }) {
-    console.log(categories)
     return (
         <div className='flex flex-wrap border-collapse max-[1600px]:max-w-5xl max-[1600px]:mx-auto'>
             {categories.map((category: Category) => (
